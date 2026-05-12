@@ -4,8 +4,7 @@ import google.generativeai as genai
 # --- ZDE VLOŽ SVŮJ KLÍČ ---
 MOJE_API_KLIC = "AIzaSyD8BLC5IR1WQyYtuY0l1gDHclgyztRe4DE"
 genai.configure(api_key=MOJE_API_KLIC)
-model = genai.GenerativeModel('gemini-1.5-flash-latest')
-
+model = genai.GenerativeModel('gemini-pro')
 class RobloxBotApp(ctk.CTk):
     def __init__(self):
         super().__init__()
